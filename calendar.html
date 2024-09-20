@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Javascript Calendar</title>
+    <link href="calendar.css" rel="stylesheet">
+    <script defer src="calendar.js"></script>
+  </head>
+  <body>
+    <!-- (A) PERIOD SELECTOR -->
+    <div id="calPeriod">
+      <select id="calMonth"></select>
+      <input type="number" id="calYear">
+    </div>
+
+    <!-- (B) CALENDAR -->
+    <div id="calWrap"></div>
+
+    <!-- (C) EVENT FORM -->
+    <dialog id="calForm"><form method="dialog">
+      <h2>CALENDAR EVENT</h2>
+      <label>Date</label>
+      <input type="text" id="evtDate" readonly>
+      <label>Details</label>
+      <textarea id="evtTxt" required></textarea>
+
+      <input id="evtClose" type="button" value="Close">
+      <input id="evtDel" type="button" value="Delete">
+      <input id="evtSave" type="submit" value="Save">
+    </form></dialog>
+  </body>
+</html>
